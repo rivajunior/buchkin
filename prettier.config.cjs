@@ -1,3 +1,5 @@
+const prettierPluginTailwindcss = require('prettier-plugin-tailwindcss');
+
 module.exports = {
 	useTabs: true,
 	singleQuote: true,
@@ -10,4 +12,5 @@ module.exports = {
 			},
 		},
 	],
+	plugins: [prettierPluginTailwindcss],
 };
