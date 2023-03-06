@@ -2,6 +2,18 @@
 	"name": "buchkin",
 	"version": "0.0.0",
 	"description": "A Munchkin game admin",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/rivajunior/buchkin.git"
+	},
+	"keywords": [
+		"munchkin"
+	],
+	"author": "Riva Junior",
+	"bugs": {
+		"url": "https://github.com/rivajunior/buchkin/issues"
+	},
+	"homepage": "https://github.com/rivajunior/buchkin#readme",
 	"module": "true",
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
