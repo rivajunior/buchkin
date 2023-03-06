@@ -8,8 +8,13 @@
 		"esModuleInterop": true,
 		"jsx": "preserve",
 		"jsxImportSource": "solid-js",
-		"types": ["vite/client"],
+		"types": ["vite/client", "vitest/globals"],
 		"noEmit": true,
-		"isolatedModules": true
-	}
+		"isolatedModules": true,
+		"rootDir": "src",
+		"importsNotUsedAsValues": "error",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "forceConsistentCasingInFileNames": true,
+	},
+	"include": ["src"]
 }

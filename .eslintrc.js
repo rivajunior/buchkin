@@ -24,6 +24,16 @@ module.exports = {
 				'plugin:prettier/recommended',
 			],
 			files: ['*.ts', '*.tsx'],
+			parserOptions: {
+				project: './tsconfig.eslint.json',
+			},
+		},
+		{
+			files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+			extends: ['plugin:testing-library/dom'],
+			rules: {
+				'@typescript-eslint/no-unsafe-call': 'off',
+			},
 		},
 	],
 	// Repeated here from eslint-config-xo in case some plugins set something different
@@ -51,6 +61,7 @@ module.exports = {
 			typescript: {
 				alwaysTryTypes: true, // Always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
 			},
+			node: { extensions: ['.js', '.jsx', '.ts', '.tsx', '.d.ts'] },
 		},
 	},
 };

@@ -1,0 +1,4 @@
+dist
+.wireit
+node_modules
+types/jest
