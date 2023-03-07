@@ -1,10 +1,16 @@
-name: Testing the app
+name: CI Tests
 
 on:
   push:
     branches: [ $default-branch ]
   pull_request:
     branches: [ $default-branch ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        default: test
 
 jobs:
   unit:
