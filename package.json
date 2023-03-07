@@ -17,6 +17,7 @@
 	"module": "true",
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
+		"prepare": "husky install",
 		"start": "wireit",
 		"build": "wireit",
 		"serve": "wireit",
@@ -26,6 +27,8 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
+		"@commitlint/cli": "^17.4.4",
+		"@commitlint/config-conventional": "^17.4.4",
 		"@solidjs/testing-library": "^0.6.1",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/user-event": "^14.4.3",
@@ -46,6 +49,7 @@
 		"eslint-plugin-testing-library": "^5.10.2",
 		"eslint-plugin-tsdoc": "^0.2.17",
 		"eslint-plugin-unicorn": "^45.0.2",
+		"husky": "^8.0.3",
 		"jsdom": "^21.1.0",
 		"postcss": "^8.4.21",
 		"prettier": "^2.8.4",
